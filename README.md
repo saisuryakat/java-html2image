@@ -53,10 +53,12 @@ Html2Image as only one useful Java class, HtmlImageGenerator.
 
 Common usage is this:
 
+```java
 HtmlImageGenerator imageGenerator = new HtmlImageGenerator();
 imageGenerator.loadHtml("<b>Hello World!</b> Please goto <a title=\"Goto Google\" href=\"http://www.google.com\">Google</a>.");
 imageGenerator.saveAsImage("hello-world.png");
 imageGenerator.saveAsHtmlWithMap("hello-world.html", "hello-world.png");
+```
 Which will generate hello-world.png image of the HTML and hello-world.html file containing client-side image-map <map> (as in the example above).
 
 ####HtmlImageGenerator Methods
